@@ -1,5 +1,3 @@
-Tasket
-
 # Tracks | **Feature guide**
 
 **V 1.0 | 08.08.2026**
@@ -188,6 +186,9 @@ As you start using Tracks, these behaviours are worth knowing so nothing surpris
 - **Closing a task keeps its tracks.** When you Complete or Discard a task, it drops out of the board columns (which only show open tasks), but its track statuses are kept. Reopen the task and it returns to its columns exactly as it was.
 - **Renaming and moving are safe.** Renaming a track only changes its label on the board and in the pill; statuses and assignments stay put. Moving a track only changes the column's position; nothing else changes.
 - **Guests can join in.** Guests (members from another organisation) have the same track permissions as members on projects they have access to.
+  > **Important:** Because guests inherit full member permissions, they can create, rename, and move tracks. Admins should ensure guests are aware of project track workflows before granting access.
+
+> **Warning:** Moving a task to a different project permanently wipes all its track assignments and history. Even if you move the task back to the original project, it will land with no track started.
 
 > **Warning:** Deleting a track is a hard, irreversible removal of that track's statuses and assignments everywhere including – on open and closed tasks alike. There is no undo and no recovery window, so delete with care.
 
@@ -213,7 +214,7 @@ For quick reference, here is who is allowed to perform each Tracks action.
 | Create a track | Any team member |
 | Rename a track | Any team member |
 | Move a track | Any team member |
-| Delete a track | Any team member |
+| Delete a track | Admin only |
 | Start a task on a track | Any member with access to the task |
 | Mark Done, Stop, and Mark Pending | Any member with access to the task |
 | Select and start across tracks | Any member with access to the tasks selected |
@@ -232,6 +233,6 @@ For quick reference, here is who is allowed to perform each Tracks action.
 
 ---
 
-© 2026 Neo Work | Confidential and Proprietary.
+© 2026 Neo Work OS | Confidential and Proprietary.
 
 ---
